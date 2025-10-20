@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'headerFont';
+  src: url('VeniteAdoremus-rgRBA.ttf');
+}
+
+@font-face {
+  font-family: 'siderFont';
+  src: url('SpaceNova-6Rpd1.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to top, #252525, #191919);
+  color: white;
+  display: flex;
+  margin: 50px;
+}
+
+/* 🔹 Container for both cards */
+.cards-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  gap: 40px; /* Space between cards */
+  flex-wrap: wrap; 
+}
+
+/* 🔹 Single card style */
+.card {
+  background: #202020;
+  border: 2px solid gold;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: headerFont;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px gold;
+}
+
+/* Header section */
+.header-section {
+  position: relative;
+}
+
+.card-image {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rating {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background-color: rgb(209, 209, 14);
+  color: black;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  padding-top: 5px;
+  font-family: headerFont;
+}
+
+.main-sider {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section {
+  margin: 20px;
+}
+
+.left-sider {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(47, 41, 36));
+  padding: 10px;
+}
+
+.right-sider {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(to bottom, #3F3734, #5A4237);
+  padding: 25px 10px;
+}
+
+.claim-btn {
+  text-align: center;
+}
+
+.claim-btn button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #e7b74b;
+  border: none;
+  border-radius: 5px;
+  font-family: headerFont;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.claim-btn button:hover {
+  background-color: gold;
+}
