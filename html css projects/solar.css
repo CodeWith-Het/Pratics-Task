@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.solar-system{
+  /* border: 2px solid white; */
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  position:absolute;
+  box-shadow: 0 0 50px 20px yellow;
+  z-index: 10;
+}
+
+.orbit {
+  position: absolute;
+  border: 2px dashed rgba(255,255,255,0.2);
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+.planet{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+#mercury-orbit {
+  width: 150px;
+  height: 150px;
+  animation-duration: 5s; /* Mercury ki speed tez hai */
+}
+
+#mercury {
+  width: 10px;
+  height: 10px;
+  background: gray;
+}
+
+#venus-orbit {
+  width: 200px;
+  height: 200px;
+  animation-duration: 8s; /* Mercury ki speed tez hai */
+}
+
+#venus{
+  width: 14px;
+  height: 14px;
+  background: orange;
+}
+
+#earth-orbit {
+  width: 260px;
+  height: 260px;
+  animation-duration: 12s; /* Mercury ki speed tez hai */
+}
+
+#earth {
+  width: 16px;
+  height: 16px;
+  background: blue;
+}
+
+#mars-orbit {
+  width: 320px;
+  height: 320px;
+  animation-duration: 18s; /* Mercury ki speed tez hai */
+}
+
+#mars {
+  width: 12px;
+  height: 12px;
+  background: red;
+}
+
+@keyframes rotate {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
