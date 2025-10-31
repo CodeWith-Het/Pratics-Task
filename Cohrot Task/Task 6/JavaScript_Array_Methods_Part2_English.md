@@ -105,8 +105,3 @@
 5. Rename a property using alias during object destructuring.
 6. Use array destructuring to take some values and store the rest separately.
 7. Destructure a function’s return value into variables.
-
----
-
-## 💡 Next Step (Optional)
-👉 Try “Advanced Combination Practice” — where you combine `filter()`, `map()`, `reduce()`, and `find()` to solve **real-world JavaScript problems (20–40 logical coding challenges)**.
