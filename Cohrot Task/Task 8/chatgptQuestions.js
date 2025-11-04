@@ -122,3 +122,30 @@ html.innerHTML=` <h1 id="title"></h1>
     <div class="box">box3</div>
     <div class="box">box4</div>
     <div class="box">box5</div>`
+
+----> Write code to get the value of the "href" attribute from an anchor <a> element.
+let hrefValue = document.querySelector("a");
+console.log(hrefValue.href);
+
+----> How do you retrieve the "id" attribute of a button element using getAttribute? Write an example.
+let getBtn=document.getElementById("clickBTN");
+console.log(getBtn.getAttribute("id"));
+
+---> Write a script to get the value of a custom attribute (e.g., data-info) on a div element.
+let myDiv = document.querySelector("#data-info");
+console.log(myDiv.getAttribute("id"));
+
+----> How can you use getAttribute to check if an image element has an "alt" attribute? Provide code.
+let myImage = document.getElementById("myImage");
+console.log(myImage.getAttribute("alt"));
+
+----> Write a function that takes an element and attributename as arguments and returns the attribute's value using getAttribute.
+const getAttributeValue = (element,attributeName) =>{
+    return element.getAttribute(attributeName);
+}
+
+let a = document.getElementById("KrishnaImage");
+let result1 = getAttributeValue(a,"src");
+let result2 = getAttributeValue(a,"alt");
+console.log(result1);
+console.log(result2);
